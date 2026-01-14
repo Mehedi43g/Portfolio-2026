@@ -3,10 +3,10 @@ import Container from './Container'
 
 const About = () => {
   return (
-    <section>
+    <section className='py-20'>
         <Container>
             <div className="">
-                wwwwww
+                <p className='text-center'>ABOUT ME</p>
             </div>
         </Container>
     </section>
