@@ -29,7 +29,7 @@ const Footer = () => {
   </svg>
 );
   return (
-    <footer className='py-10 bg-slate-900 text-white overflow-hidden'>
+    <footer className='py-10  bg-linear-to-br from-slate-800 via-slate-900 to-slate-700 text-white overflow-hidden'>
       <Container>
         <div className="flex justify-between">
           <div className="w-4/12">
