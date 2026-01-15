@@ -137,7 +137,7 @@ const Projects = () => {
             </div>
             <div className="w-6/12 ">
               <div className="p-7 bg-white rounded-2xl border-2 border-[#00D3F3] relative group ">
-                <img className='rounded-2xl shadow-xl/30 group-hover:scale-105 ease-in-out duration-300' src={photo2} alt="" />
+                <img className='rounded-2xl shadow-xl/30 group-hover:scale-105 ease-in-out duration-300' src={photo1} alt="" />
                 <div className=" absolute top-0 left-0 bg-[#00d3f32a] w-full h-full rounded-2xl opacity-0 group-hover:opacity-100   ease-in-out">
 
                   <div className="flex mx-auto justify-center my-[20%] gap-3 items-center">
