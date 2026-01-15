@@ -11,7 +11,7 @@ const About = () => {
       <Container>
         <div className="">
           <div className="text-center font-lato">
-            <p className='text-[#00D3F3] font-lato text-[16px]'>ABOUT ME</p>
+            <p className='text-[#00D3F3] font-lato text-[14px]'>ABOUT ME</p>
             <h4 className='text-[40px] font-lato'>Disciplined. Detail-oriented. <span className='text-[#00D3F3]'>Production-ready.</span></h4>
           </div>
         </div>
