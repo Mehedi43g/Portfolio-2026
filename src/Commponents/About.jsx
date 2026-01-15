@@ -7,7 +7,7 @@ import { IoMdThunderstorm } from 'react-icons/io'
 
 const About = () => {
   return (
-    <section className='py-30 bg-slate-900 text-white'>
+    <section className='py-30 bg-slate-900 text-white overflow-hidden'>
       <Container>
         <div className="">
           <div className="text-center font-lato">

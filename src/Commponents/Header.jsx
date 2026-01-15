@@ -4,7 +4,7 @@ import { VscVscodeInsiders } from 'react-icons/vsc'
 
 const Header = () => {
     return (
-       <nav className="fixed top-0 left-0 w-full z-50 shadow-lg bg-[#0f172bda] text-white">
+       <nav className="fixed top-0 left-0 w-full z-50 shadow-lg bg-[#0f172bda] text-white overflow-hidden">
   <Container>
     <div className="flex items-center justify-between py-4">
       <div className="group flex items-center gap-4 cursor-pointer select-none">
