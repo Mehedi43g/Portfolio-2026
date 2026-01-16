@@ -33,10 +33,10 @@ const Banner = () => {
             <p className='font-lato text-gray-600'>Frontend Developer specializing in React, Tailwind CSS, and modern JavaScript. I create
               component-based architectures that are performant, maintainable, and built for production.</p>
             <div className="flex gap-4 mt-8">
-              <button className="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition">
+              <a href='#projects'  className="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition cursor-pointer">
                 View Projects
-              </button>
-              <button className="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-600 hover:text-white transition">
+              </a>
+              <button className="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-600 hover:text-white transition cursor-pointer">
                 Download CV
               </button>
             </div>

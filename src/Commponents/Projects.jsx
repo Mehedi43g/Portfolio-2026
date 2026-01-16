@@ -3,6 +3,7 @@ import Container from './Container'
 import photo1 from "../assets/photo1.png"
 import photo2 from "../assets/photo2.png"
 import ScrollReveal from '../hooks/ScrollReveal'
+import { Link } from 'react-router'
 
 const Projects = () => {
   // amer icon a somosa hower karone ai dia svg icon ready korsi
@@ -55,42 +56,53 @@ const [ref, visible] = ScrollReveal();
                 <div className=" absolute top-0 left-0 bg-[#00d3f32a] w-full h-full rounded-2xl opacity-0 group-hover:opacity-100   ease-in-out">
 
                   <div className="flex mx-auto justify-center my-[20%] gap-3 items-center">
+                    <Link to="https://orebi-2-0.vercel.app/" target='_blank'>
+                    
                     <button className="inline-flex items-center gap-2 p-2 border bg-[#11202D] hover:bg-[#00D3F3] ease-in-out duration-300 text-[#FFFFFF] rounded-full hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                       <ExternalLinkIcon />
                     </button>
-
+                    </Link>
+                    <Link to='https://github.com/Mehedi43g/OREBI2.0' target='_blank' >
                     <button className="inline-flex items-center gap-2 p-2 border bg-[#11202D] hover:bg-[#00D3F3] ease-in-out duration-300 text-[#FFFFFF] rounded-full hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                       <GithubIcon />
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-6/12">
-              <h3 className='font-lato text-[30px] text-white '>Analytics Dashboard</h3>
-              <p className='font-lato text-[14px] text-[#99A1A1]'>Real-time analytics platform with interactive charts, data visualization, and responsive design. Built with React, Recharts, and Tailwind CSS.</p>
+              <h3 className='font-lato text-[30px] text-white '>Orebi E-commers Web</h3>
+              <p className='font-lato text-[14px] text-[#99A1A1]'>Modern E-commerce Platform with API Integration, Context API State Management, and Fully Responsive Design. Built using React and Tailwind CSS.</p>
               <div className="border bg-[#0E0C14] border-[#00d3f3c0] mt-3 p-3 rounded-[5px]">
                 <h4 className='text-[#00D3F3] text-[16px] font-lato '>Problem Solved:</h4>
-                <p className='text-[#99A1A1] text-[14px] font-lato'>Complex data visualization with real-time updates and responsive layouts</p>
+                <p className='text-[#99A1A1] text-[14px] font-lato'>Overcame issues related to dynamic data rendering, state synchronization, and responsive UI structuring by
+                   leveraging React’s component-based architecture and Context API.</p>
               </div>
               <div className="">
                 <ul className='flex pt-3 gap-3'>
                   <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>React</li>
+                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>React Router</li>
+                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>Context API</li>
                   <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>Tailwind CSS</li>
                   <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>JavaScript</li>
                 </ul>
                 <div className="">
                   <div className="flex pt-6 gap-5">
                     <div className="flex pt-1 gap-5">
-                      <button className="inline-flex duration-300 items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
+                      <Link to='https://orebi-2-0.vercel.app/' target='_blank'>
+                      <button className="inline-flex duration-300 items-center cursor-pointer gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                         <ExternalLinkIcon />
                         <span className="leading-none">Live Demo</span>
                       </button>
-
-                      <button className="inline-flex duration-300 items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
+                      </Link>
+                      <Link to='https://github.com/Mehedi43g/OREBI2.0' target='_blank'>
+                      <button className="inline-flex duration-300 items-center cursor-pointer gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                         <GithubIcon />
                         <span className="leading-none">Source Code</span>
                       </button>
+                      
+                      </Link>
                     </div>
 
                   </div>
@@ -102,34 +114,36 @@ const [ref, visible] = ScrollReveal();
           </div>
           <div className="pt-10 flex gap-10">
             <div className="w-6/12">
-              <h3 className='font-lato text-[30px] text-white '>Analytics Dashboard</h3>
-              <p className='font-lato text-[14px] text-[#99A1A1]'>Real-time analytics platform with interactive charts, data visualization, and responsive design. Built with React, Recharts, and Tailwind CSS.</p>
+              <h3 className='font-lato text-[30px] text-white '><span className='pr-1'>{"{"}</span>Finsweet</h3>
+              <p className='font-lato text-[14px] text-[#99A1A1]'>Fully Responsive Website built with HTML, CSS, and Bootstrap 5, featuring modern layout and design.</p>
               <div className="border bg-[#0E0C14] border-[#00d3f3c0] mt-3 p-3 rounded-[5px]">
                 <h4 className='text-[#00D3F3] text-[16px] font-lato '>Problem Solved:</h4>
-                <p className='text-[#99A1A1] text-[14px] font-lato'>Complex data visualization with real-time updates and responsive layouts</p>
+                <p className='text-[#99A1A1] text-[14px] font-lato'>Solved responsive layout challenges, optimized cross-browser design, and ensured smooth UI consistency using HTML, CSS, and Bootstrap 5.</p>
               </div>
               <div className="">
                 <ul className='flex pt-3 gap-3'>
-                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>React</li>
-                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>Tailwind CSS</li>
-                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>JavaScript</li>
+                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>HTML</li>
+                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>CSS</li>
+                  <li className='text-[14px] border bg-[#11202D] px-3 py-1 cursor-pointer text-[#00D3F3] rounded-[5px]'>Bootstrap 5</li>
                 </ul>
                 <div className="">
                   <div className="flex pt-6 gap-5">
                     <div className="flex pt-1 gap-5">
+                      <Link to='https://finweet-relison.vercel.app/' target='_block'>
                       <button className="inline-flex duration-300 items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                         <ExternalLinkIcon />
                         <span className="leading-none">Live Demo</span>
                       </button>
-
+                      
+                      </Link>
+                      <Link to='https://github.com/Mehedi43g/-Finweet-relison' target='_block'>
                       <button className="inline-flex duration-300 items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                         <GithubIcon />
                         <span className="leading-none">Source Code</span>
-                      </button>
-                    </div>
-
-                  </div>
-
+                      </button> 
+                      </Link>
+                    </div> 
+                  </div> 
                 </div>
               </div>
 
@@ -138,15 +152,19 @@ const [ref, visible] = ScrollReveal();
               <div className="p-7 bg-white rounded-2xl border-2 border-[#00D3F3] relative group ">
                 <img className='rounded-2xl shadow-xl/30 group-hover:scale-105 ease-in-out duration-300' src={photo1} alt="" />
                 <div className=" absolute top-0 left-0 bg-[#00d3f32a] w-full h-full rounded-2xl opacity-0 group-hover:opacity-100   ease-in-out">
-
                   <div className="flex mx-auto justify-center my-[20%] gap-3 items-center">
+                  <Link to='https://finweet-relison.vercel.app/' target='_block'>
                     <button className="inline-flex items-center gap-2 p-2 border bg-[#11202D] hover:bg-[#00D3F3] ease-in-out duration-300 text-[#FFFFFF] rounded-full hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                       <ExternalLinkIcon />
                     </button>
-
+                  
+                  </Link>
+                    <Link to='https://github.com/Mehedi43g/-Finweet-relison' target='_block'>
                     <button className="inline-flex items-center gap-2 p-2 border bg-[#11202D] hover:bg-[#00D3F3] ease-in-out duration-300 text-[#FFFFFF] rounded-full hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                       <GithubIcon />
                     </button>
+                    
+                    </Link>
                   </div>
                 </div>
               </div>
