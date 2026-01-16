@@ -4,12 +4,14 @@ import { FaCode } from 'react-icons/fa'
 import { LuLayers } from 'react-icons/lu'
 import { AiTwotoneThunderbolt } from 'react-icons/ai'
 import { IoMdThunderstorm } from 'react-icons/io'
-
+import ScrollReveal from '../hooks/ScrollReveal'
 const About = () => {
+   const [ref, visible] = ScrollReveal();
   return (
     <section id='about' className='py-30 bg-slate-900 text-white overflow-hidden'>
       <Container>
-        <div className="">
+       <div ref={ref} className={`${visible  ? "opacity-100 translate-y-0 scale-100 duration-1000" : "opacity-0 translate-y-16 scale-95"}`}>
+         <div className="">
           <div className="text-center font-lato">
             <p className='text-[#00D3F3] font-lato text-[14px]'>ABOUT ME</p>
             <h4 className='text-[40px] font-lato'>Disciplined. Detail-oriented. <span className='text-[#00D3F3]'>Production-ready.</span></h4>
@@ -62,6 +64,7 @@ const About = () => {
             </div>
           </div>
         </div>
+       </div>
       </Container>
     </section>
   )

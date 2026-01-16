@@ -3,6 +3,7 @@ import Container from './Container'
 import { VscVscodeInsiders } from 'react-icons/vsc'
 import { FaLinkedinIn } from 'react-icons/fa';
 import { Link } from 'react-router';
+import ScrollReveal from '../hooks/ScrollReveal';
 
 const Footer = () => {
     const GithubIcon = ({ size = 20 }) => (
@@ -29,10 +30,11 @@ const Footer = () => {
     <path d="M4.98 3.5C3.33 3.5 2 4.84 2 6.5s1.33 3 2.98 3c1.64 0 2.98-1.34 2.98-3s-1.34-3-2.98-3zM2.4 9h5.16v12H2.4V9zM9.5 9h4.95v1.67h.07c.69-1.31 2.38-2.68 4.88-2.68 5.22 0 6.17 3.43 6.17 7.88V21h-5.16v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.69-2.49 3.44V21H9.5V9z"/>
   </svg>
 );
+const [ref, visible] = ScrollReveal();
   return (
     <footer id='footer' className='py-10  bg-linear-to-br from-slate-800 via-slate-900 to-slate-700 text-white overflow-hidden'>
       <Container>
-        <div className="flex justify-between">
+        <div ref={ref} className={`flex justify-between ${visible  ? "opacity-100 translate-y-0 scale-100 duration-1000" : "opacity-0 translate-y-16 scale-95"}`}>
           <div className="w-4/12">
            <div className="group flex items-center gap-4 cursor-pointer select-none">
                   <div className="p-3 rounded-xl bg-indigo-600 text-white group-hover:bg-white group-hover:text-indigo-600 transition-all duration-300 shadow-md">

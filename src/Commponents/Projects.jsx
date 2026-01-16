@@ -1,9 +1,8 @@
 import React from 'react'
 import Container from './Container'
-import { FaGithub } from 'react-icons/fa'
 import photo1 from "../assets/photo1.png"
 import photo2 from "../assets/photo2.png"
-import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
+import ScrollReveal from '../hooks/ScrollReveal'
 
 const Projects = () => {
   // amer icon a somosa hower karone ai dia svg icon ready korsi
@@ -38,12 +37,12 @@ const Projects = () => {
     </svg>
   );
   // amer icon a somosa hower karone ai dia svg icon ready korsi
-
+const [ref, visible] = ScrollReveal();
 
   return (
-    <section id='projects' className='py-20 bg-[#0E0E13]'>
+    <section id='projects' className='py-15 bg-[#0E0E13]'>
       <Container>
-        <div className="">
+        <div ref={ref}  className={`${visible  ? "opacity-100 translate-y-0 scale-100 duration-1000" : "opacity-0 translate-y-16 scale-95"}`}>
           <div className="text-center">
             <p className='text-[14px] text-[#00D3F3]'>Portfolio</p>
             <h3 className='text-[40px] font-lato font-bold text-white'>Featured <span className='text-[#00D3F3]'>Projects</span></h3>

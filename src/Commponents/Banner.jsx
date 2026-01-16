@@ -5,18 +5,20 @@ import { MdEmail } from 'react-icons/md'
 import { Link } from 'react-router'
 import mehedi from "../assets/Mehedi.png"
 import { GoDotFill } from 'react-icons/go'
+import ScrollReveal from '../hooks/ScrollReveal'
 
 const Banner = () => {
+  const [ref, visible] = ScrollReveal();
   return (
-    <section id='banner' className='bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden'>
+    <section id='banner'  className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden" >
       <Container>
-        <div className="max-w-7xl mx-auto px-6 pt-30 pb-20 grid md:grid-cols-2 gap-12 items-center ">
+        <div ref={ref} className={`max-w-7xl mx-auto px-6 pt-30 pb-20 grid md:grid-cols-2 gap-12 items-center ${visible  ? "opacity-100 translate-y-0 scale-100 duration-1000" : "opacity-0 translate-y-16 scale-95"}`}>
           <div className="absolute inset-0 pointer-events-none hidden md:block">
-            <div className="absolute top-20 left-20 w-32 h-32 bg-white/20 rounded-xl rotate-40"></div>
-            <div className="absolute top-60 right-32 w-24 h-24 bg-white/15 rounded-lg rotate-40 tracking-wide animate-bounce [animation-duration:2.2s]  "></div>
-            <div className="absolute bottom-10.25 left-0 w-30 h-30 bg-white/20  rounded-2xl rotate-40 tracking-wide animate-bounce [animation-duration:5.2s] overflow-hidden"></div>
-            <div className="absolute top-10 right-100 w-30 h-30 bg-white/10 rounded-2xl rotate-40  tracking-wide animate-bounce [animation-duration:5.2s] "></div>
-            <div className="absolute bottom-20 right-20 w-28 h-28 bg-white/20 rounded-xl rotate-40 tracking-wide animate-bounce [animation-duration:5.2s]  "></div>
+            <div className="absolute top-20 -left-35 w-32 h-32 bg-white/20 rounded-xl rotate-40"></div>
+            <div className="absolute top-60 -right-10 w-24 h-24 bg-white/15 rounded-lg rotate-40 tracking-wide animate-bounce [animation-duration:2.2s]  "></div>
+            <div className="absolute -bottom-20.25 -left-38 w-30 h-30 bg-white/20  rounded-2xl rotate-40 tracking-wide animate-bounce [animation-duration:5.2s] overflow-hidden"></div>
+            <div className="absolute top-10 right-50 w-30 h-30 bg-white/10 rounded-2xl rotate-40  tracking-wide animate-bounce [animation-duration:5.2s] "></div>
+            <div className="absolute bottom-10 -right-10 w-28 h-28 bg-white/20 rounded-xl rotate-40 tracking-wide animate-bounce [animation-duration:5.2s]  "></div>
           </div>
           <div>
             <p className="text-indigo-600  mb-3 font-lato font-bold">Hello, I’m</p>

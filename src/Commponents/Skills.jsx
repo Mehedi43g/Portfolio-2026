@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import ScrollReveal from "../hooks/ScrollReveal";
 
 const skills = [
   { name: "React", level: 95, tag: "Frontend" },
@@ -13,13 +14,15 @@ const skills = [
 
 const Skills = () => {
   const sectionRef = useRef(null);
-  const [visible, setVisible] = useState(false);
+  const [visiblee, setVisiblee] = useState(false);
+  const [ref, visible] = ScrollReveal();
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true);
+          setVisiblee(true);
           observer.disconnect();
         }
       },
@@ -31,7 +34,7 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={sectionRef} className="bg-black py-20 px-6 text-white overflow-hidden" >
-      <div className="max-w-6xl mx-auto">
+      <div ref={ref}  className={`max-w-6xl mx-auto ${visible  ? "opacity-100 translate-y-0 scale-100 duration-1000" : "opacity-0 translate-y-16 scale-95"}`}>
         <p className="text-center text-[14px] uppercase text-cyan-400 font-lato">Technical Skills</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center font-lato">
           Tools & <span className="text-cyan-400">Technologies</span>
@@ -56,7 +59,7 @@ const Skills = () => {
                 <div
                   className="h-full rounded-full bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 transition-all duration-1000 ease-out"
                   style={{
-                    width: visible ? `${skill.level}%` : "0%",
+                    width: visiblee ? `${skill.level}%` : "0%",
                   }}
                 />
               </div>
