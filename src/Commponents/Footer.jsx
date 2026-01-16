@@ -2,6 +2,7 @@ import React from 'react'
 import Container from './Container'
 import { VscVscodeInsiders } from 'react-icons/vsc'
 import { FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const Footer = () => {
     const GithubIcon = ({ size = 20 }) => (
@@ -29,7 +30,7 @@ const Footer = () => {
   </svg>
 );
   return (
-    <footer className='py-10  bg-linear-to-br from-slate-800 via-slate-900 to-slate-700 text-white overflow-hidden'>
+    <footer id='footer' className='py-10  bg-linear-to-br from-slate-800 via-slate-900 to-slate-700 text-white overflow-hidden'>
       <Container>
         <div className="flex justify-between">
           <div className="w-4/12">
@@ -52,14 +53,16 @@ const Footer = () => {
           <div className="w-2/12">
           <h3 className='text-[14px] text-[#00D3F3]'>QUICK LINKS</h3>
           <ul className='flex flex-col gap-3 pt-5 text-[14px]'>
-            <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'>Hmoe</li>
-            <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'>About</li>
-            <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'>Skills</li>
-            <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'>Projects</li>
+           
+            <li  className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="/">Home</a></li>
+          
+            <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="#about">About</a></li>
+            <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="#skills">Skills</a></li>
+            <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="#projects">Projects</a></li>
           </ul>
           </div>
           <div className="w-4/12">
-          <h3 className='text-[14px] text-[#00D3F3]'>GET IN TOUCH</h3>
+            <h3 className='text-[14px] text-[#00D3F3]'>GET IN TOUCH</h3>
             <p className='text-[14px] text-gray-500 flex gap-2 pt-4 items-center'><GithubIcon />mdmehedi992124@gmail.com</p>
             <div className="flex pt-6 gap-4">
               <div className="">

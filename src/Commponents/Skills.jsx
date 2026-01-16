@@ -30,7 +30,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-black py-20 px-6 text-white overflow-hidden" >
+    <section id="skills" ref={sectionRef} className="bg-black py-20 px-6 text-white overflow-hidden" >
       <div className="max-w-6xl mx-auto">
         <p className="text-center text-[14px] uppercase text-cyan-400 font-lato">Technical Skills</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center font-lato">

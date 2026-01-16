@@ -8,7 +8,7 @@ import { GoDotFill } from 'react-icons/go'
 
 const Banner = () => {
   return (
-    <section className='bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden'>
+    <section id='banner' className='bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden'>
       <Container>
         <div className="max-w-7xl mx-auto px-6 pt-30 pb-20 grid md:grid-cols-2 gap-12 items-center ">
           <div className="absolute inset-0 pointer-events-none hidden md:block">

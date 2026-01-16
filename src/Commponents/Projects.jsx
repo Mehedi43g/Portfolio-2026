@@ -41,7 +41,7 @@ const Projects = () => {
 
 
   return (
-    <section className='py-20 bg-[#0E0E13]'>
+    <section id='projects' className='py-20 bg-[#0E0E13]'>
       <Container>
         <div className="">
           <div className="text-center">
