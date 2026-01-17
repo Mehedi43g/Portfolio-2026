@@ -66,21 +66,20 @@ const [ref, visible] = ScrollReveal();
           <div className="w-4/12">
             <h3 className='text-[14px] text-[#00D3F3]'>GET IN TOUCH</h3>
             <p className='text-[14px] text-gray-500 flex gap-2 pt-4 items-center'><GithubIcon />mdmehedi992124@gmail.com</p>
+
             <div className="flex pt-6 gap-4">
               <div className="">
                 <Link to="https://github.com/Mehedi43g" target='_blank'>
                 <button className="inline-flex items-center gap-2 p-2 border bg-[#091B24] hover:bg-[#00D3F3] ease-in-out duration-300 text-[#FFFFFF] rounded-2xl cursor-pointer hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                       <GithubIcon />
               </button>
-                
-                </Link>
+              </Link>
               </div>
               <Link to="https://www.linkedin.com/in/md-mehedi-hasan-58684536b/?skipRedirect=true" target='_blank'>
             <button className="inline-flex items-center gap-2 p-2 border bg-[#091B24] hover:bg-[#00D3F3] ease-in-out duration-300 text-[#FFFFFF] rounded-2xl cursor-pointer hover:border-[#00D3F3] hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
                <LinkedInIcon />
             </button>
-              
-              </Link>
+            </Link>
             </div>
             <p className='pt-8 text-[14px] text-gray-500 flex gap-2 items-center'>© 2026 Litan Molla. All rights reserved.</p>
           </div>
