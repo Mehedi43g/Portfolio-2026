@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from './Container'
 import { VscVscodeInsiders } from 'react-icons/vsc'
+import { Link } from 'react-router'
 
 const Header = () => {
   return (
@@ -44,9 +45,9 @@ const Header = () => {
                 <a href="#projects">Projects</a>
               </li>
             </ul>
-
-            <button className="px-6 py-2 rounded-full border border-indigo-600 text-sm font-semibold hover:bg-indigo-600
-         hover:text-white transition-all duration-300"> Contact </button>
+            
+            <a href='#footer' className="px-6 py-2 rounded-full border border-indigo-600 text-sm font-semibold hover:bg-indigo-600 cursor-pointer
+         hover:text-white transition-all duration-300"> Contact </a>
           </div>
 
         </div>
