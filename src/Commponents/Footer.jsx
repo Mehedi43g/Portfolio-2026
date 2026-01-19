@@ -55,9 +55,7 @@ const [ref, visible] = ScrollReveal();
           <div className="w-2/12">
           <h3 className='text-[14px] text-[#00D3F3]'>QUICK LINKS</h3>
           <ul className='flex flex-col gap-3 pt-5 text-[14px]'>
-           
-            <li  className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="/">Home</a></li>
-          
+             <li  className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="/">Home</a></li>
             <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="#about">About</a></li>
             <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="#skills">Skills</a></li>
             <li className='text-[14px] hover:text-[#00D3F3] duration-300 ease-in-out cursor-pointer'><a href="#projects">Projects</a></li>
