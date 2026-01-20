@@ -17,8 +17,8 @@ const About = () => {
             <h4 className='text-[40px] font-lato'>Disciplined. Detail-oriented. <span className='text-[#00D3F3]'>Production-ready.</span></h4>
           </div>
         </div>
-        <div className="pt-20 flex gap-5 items-center">
-          <div className="w-6/12 flex flex-col gap-5 font-lato text-[16px]">
+        <div className="pt-20 md:flex gap-5 items-center">
+          <div className=" md:w-6/12 flex flex-col gap-5 font-lato text-[16px]">
             <p>I'm a Frontend Developer who believes that great interfaces are built on a foundation of solid fundamentals.
               Every component I create is thoughtfully designed to be reusable, performant, and accessible.</p>
             <p>My approach combines modern React patterns with timeless web principles: semantic HTML, responsive design,
@@ -26,7 +26,7 @@ const About = () => {
             <p>Whether it's optimizing bundle sizes, implementing complex state management, or integrating with REST APIs,
               I focus on solutions that are maintainable and scalable for real-world production environments.</p>
           </div>
-          <div className="w-6/12 flex flex-col gap-4">
+          <div className="md:w-6/12 flex flex-col gap-4">
             <div className="flex border  rounded-[10px] border-[#1b7aa0] hover:border-[#0fb1f1]">
               <div className="flex gap-2 p-3.5">
               <div className=''>
