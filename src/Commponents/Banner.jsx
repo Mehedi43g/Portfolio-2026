@@ -15,7 +15,7 @@ const Banner = () => {
   <Container>
     <div
       ref={ref}
-      className={`relative max-w-7xl mx-auto px-4 sm:px-6 pt-24 pb-20 grid md:grid-cols-2 gap-12 items-center ${
+      className={`relative max-w-7xl mx-auto px-4 sm:px-6 pt-54 pb-20 grid md:grid-cols-2 gap-12 items-center ${
         visible
           ? "opacity-100 translate-y-0 scale-100 duration-1000"
           : "opacity-0 translate-y-16 scale-95"
