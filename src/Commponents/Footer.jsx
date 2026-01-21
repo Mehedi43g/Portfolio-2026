@@ -47,7 +47,7 @@ const Footer = () => {
               : 'opacity-0 translate-y-16 scale-95'
           }`}
         >
-          {/* LEFT */}
+          
           <div className="w-full lg:w-4/12">
             <div className="group flex items-center gap-4 cursor-pointer select-none">
               <div className="p-3 rounded-xl bg-indigo-600 text-white group-hover:bg-white group-hover:text-indigo-600 transition-all duration-300 shadow-md">
@@ -69,7 +69,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* MIDDLE */}
           <div className="w-full lg:w-2/12">
             <h3 className="text-[14px] text-[#00D3F3]">QUICK LINKS</h3>
             <ul className="flex flex-col gap-3 pt-5 text-[14px]">
@@ -88,7 +87,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* RIGHT */}
           <div className="w-full lg:w-4/12">
             <h3 className="text-[14px] text-[#00D3F3]">GET IN TOUCH</h3>
 

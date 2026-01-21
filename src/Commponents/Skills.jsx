@@ -53,7 +53,7 @@ const Skills = () => {
           Tools & <span className="text-cyan-400">Technologies</span>
         </h2>
 
-        {/* SKILLS GRID */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
           {skills.map((skill, index) => (
             <div key={index}>
@@ -83,7 +83,7 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* ADDITIONAL TOOLS */}
+
         <div className="pt-12 sm:pt-14">
           <p className="text-[15px] sm:text-[16px] text-center">
             Additional Tools

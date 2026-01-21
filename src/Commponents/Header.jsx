@@ -13,7 +13,7 @@ const Navbar = () => {
     >
       <Container>
         <div className="flex items-center justify-between py-4">
-          {/* Logo */}
+          
           <div className="group flex items-center gap-4 cursor-pointer select-none">
             <div className="p-3 rounded-xl bg-indigo-600 text-white group-hover:bg-white group-hover:text-indigo-600 transition-all duration-300 shadow-md">
               <VscVscodeInsiders className="text-[32px] group-hover:rotate-12 transition-transform duration-300" />
@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Icon */}
+
           <div
             className="md:hidden text-3xl cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -37,7 +37,6 @@ const Navbar = () => {
             {menuOpen ? <HiX /> : <HiMenuAlt3 />}
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-10">
             <ul className="flex items-center gap-8 text-sm font-medium text-white">
               <li className="relative cursor-pointer hover:text-indigo-600 transition-colors duration-300 
@@ -70,10 +69,9 @@ const Navbar = () => {
           </div>
         </div>
       </Container>
-
-      {/* Mobile Dropdown Menu */}
+      
       <div
-        className={`md:hidden fixed top-[72px] left-0 w-full bg-[#0f172be9] backdrop-blur-xl transition-all duration-300
+        className={`md:hidden fixed top-18 left-0 w-full bg-[#0f172be9] backdrop-blur-xl transition-all duration-300
         ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
       >
         <ul className="flex flex-col items-center gap-6 py-6 text-sm font-medium">
