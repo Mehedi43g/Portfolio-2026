@@ -114,7 +114,7 @@ const Footer = () => {
             </div>
 
             <p className="pt-8 text-[14px] text-gray-500">
-              © 2026 Litan Molla. All rights reserved.
+              © 2026 Mehedi Hasan. All rights reserved.
             </p>
           </div>
         </div>
