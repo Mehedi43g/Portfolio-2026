@@ -1,13 +1,19 @@
-import React from 'react'
-import Container from './Container'
-import { VscVscodeInsiders } from 'react-icons/vsc'
-import { Link } from 'react-router'
+import { useState } from "react";
+import { VscVscodeInsiders } from "react-icons/vsc";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
+import Container from "./Container";
 
-const Header = () => {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav id='header' className="fixed top-0 left-0 w-full z-50 shadow-lg bg-[#0f172be9] text-white overflow-hidden">
+    <nav
+      id="header"
+      className="fixed top-0 left-0 w-full z-50 shadow-lg bg-[#0f172be9] text-white overflow-hidden"
+    >
       <Container>
         <div className="flex items-center justify-between py-4">
+          {/* Logo */}
           <div className="group flex items-center gap-4 cursor-pointer select-none">
             <div className="p-3 rounded-xl bg-indigo-600 text-white group-hover:bg-white group-hover:text-indigo-600 transition-all duration-300 shadow-md">
               <VscVscodeInsiders className="text-[32px] group-hover:rotate-12 transition-transform duration-300" />
@@ -23,38 +29,76 @@ const Header = () => {
             </div>
           </div>
 
+          {/* Mobile Menu Icon */}
+          <div
+            className="md:hidden text-3xl cursor-pointer"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <HiX /> : <HiMenuAlt3 />}
+          </div>
+
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-10">
             <ul className="flex items-center gap-8 text-sm font-medium text-white">
               <li className="relative cursor-pointer hover:text-indigo-600 transition-colors duration-300 
-              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600  after:transition-all after:duration-300 hover:after:w-full">
+              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full">
                 <a href="/">Home</a>
               </li>
 
               <li className="relative cursor-pointer hover:text-indigo-600 transition-colors duration-300 
-              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600  after:transition-all after:duration-300 hover:after:w-full">
+              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full">
                 <a href="#about">About</a>
               </li>
 
               <li className="relative cursor-pointer hover:text-indigo-600 transition-colors duration-300
-               after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600   after:transition-all after:duration-300 hover:after:w-full">
+              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full">
                 <a href="#skills">Skills</a>
               </li>
 
-              <li className="relative cursor-pointer hover:text-indigo-600 transition-colors duration-300 after:absolute after:-bottom-1
-               after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full">
+              <li className="relative cursor-pointer hover:text-indigo-600 transition-colors duration-300
+              after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full">
                 <a href="#projects">Projects</a>
               </li>
             </ul>
-            
-            <a href='#footer' className="px-6 py-2 rounded-full border border-indigo-600 text-sm font-semibold hover:bg-indigo-600 cursor-pointer
-         hover:text-white transition-all duration-300"> Contact </a>
-          </div>
 
+            <a
+              href="#footer"
+              className="px-6 py-2 rounded-full border border-indigo-600 text-sm font-semibold hover:bg-indigo-600 cursor-pointer hover:text-white transition-all duration-300"
+            >
+              Contact
+            </a>
+          </div>
         </div>
       </Container>
+
+      {/* Mobile Dropdown Menu */}
+      <div
+        className={`md:hidden fixed top-[72px] left-0 w-full bg-[#0f172be9] backdrop-blur-xl transition-all duration-300
+        ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
+      >
+        <ul className="flex flex-col items-center gap-6 py-6 text-sm font-medium">
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="/">Home</a>
+          </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#about">About</a>
+          </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#skills">Skills</a>
+          </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#projects">Projects</a>
+          </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <a href="#footer"
+              className="px-6 py-2 rounded-full border border-indigo-600 text-sm font-semibold hover:bg-indigo-600 transition-all">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
+  );
+};
 
-  )
-}
-
-export default Header
+export default Navbar;

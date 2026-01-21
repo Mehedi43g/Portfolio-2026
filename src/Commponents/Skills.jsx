@@ -16,7 +16,6 @@ const Skills = () => {
   const sectionRef = useRef(null);
   const [visiblee, setVisiblee] = useState(false);
   const [ref, visible] = ScrollReveal();
-  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,24 +32,41 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="bg-black py-20 px-6 text-white overflow-hidden" >
-      <div ref={ref}  className={`max-w-6xl mx-auto ${visible  ? "opacity-100 translate-y-0 scale-100 duration-1000" : "opacity-0 translate-y-16 scale-95"}`}>
-        <p className="text-center text-[14px] uppercase text-cyan-400 font-lato">Technical Skills</p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center font-lato">
+    <section
+      id="skills"
+      ref={sectionRef}
+      className="bg-black py-16 sm:py-20 px-4 sm:px-6 text-white overflow-hidden"
+    >
+      <div
+        ref={ref}
+        className={`max-w-6xl mx-auto transition-all ${
+          visible
+            ? "opacity-100 translate-y-0 scale-100 duration-1000"
+            : "opacity-0 translate-y-16 scale-95"
+        }`}
+      >
+        <p className="text-center text-[13px] sm:text-[14px] uppercase text-cyan-400 font-lato">
+          Technical Skills
+        </p>
+
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12 sm:mb-14 text-center font-lato">
           Tools & <span className="text-cyan-400">Technologies</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        {/* SKILLS GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
           {skills.map((skill, index) => (
             <div key={index}>
               <div className="flex justify-between mb-2">
                 <div>
-                  <h4 className="font-semibold">{skill.name}</h4>
+                  <h4 className="font-semibold text-sm sm:text-base">
+                    {skill.name}
+                  </h4>
                   <span className="text-xs text-gray-400">
                     {skill.tag}
                   </span>
                 </div>
-                <span className="text-cyan-400 font-medium">
+                <span className="text-cyan-400 font-medium text-sm">
                   {skill.level}%
                 </span>
               </div>
@@ -66,18 +82,31 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <div className="py-10">
-          <p className="text-[16px] text-center">Additional Tools</p>
-          <div className="flex gap-2 justify-around pt-10">
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">Git & GitHub</h5>
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">Webpack & Vite</h5>
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">React Router</h5>
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">Redux & Context API</h5>
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">REST APIs</h5>
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">Jest & Testing Library</h5>
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">Figma</h5>
-            <h5 className="border py-1.25 px-2 rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1]">npm </h5>
 
+        {/* ADDITIONAL TOOLS */}
+        <div className="pt-12 sm:pt-14">
+          <p className="text-[15px] sm:text-[16px] text-center">
+            Additional Tools
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 pt-8">
+            {[
+              "Git & GitHub",
+              "Webpack & Vite",
+              "React Router",
+              "Redux & Context API",
+              "REST APIs",
+              "Jest & Testing Library",
+              "Figma",
+              "npm",
+            ].map((tool, i) => (
+              <h5
+                key={i}
+                className="border py-1.5 px-3 text-sm rounded-2xl border-[#00b0e19a] hover:border-[#00B0E1] transition-colors"
+              >
+                {tool}
+              </h5>
+            ))}
           </div>
         </div>
       </div>
