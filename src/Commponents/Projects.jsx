@@ -123,7 +123,7 @@ const [ref, visible] = ScrollReveal();
           </div>
         </div>
       </div>
-
+      
       <div className="pt-10 flex flex-col-reverse md:flex-row gap-10">
         <div className="w-full md:w-6/12 px-2">
           <h3 className='font-lato text-[30px] text-white'>
