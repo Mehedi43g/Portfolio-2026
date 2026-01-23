@@ -67,6 +67,7 @@ const About = () => {
        </div>
       </Container>
     </section>
+    // full ready 
   )
 }
 
