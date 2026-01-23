@@ -49,6 +49,7 @@ const Contract = () => {
         </div>
       </Container>
     </section>
+    // contract page a firebas ta add kora baki asay 
   );
 };
 
