@@ -102,7 +102,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                to="https://www.linkedin.com/in/md-mehedi-hasan-58684536b/?skipRedirect=true"
+                to="https://www.linkedin.com/in/md-mehedi-303534375/"
                 target="_blank"
               >
                 <button className="inline-flex items-center p-2 border bg-[#091B24] hover:bg-[#00D3F3] duration-300 rounded-2xl hover:shadow-[0_0_30px_rgba(0,211,243,0.15)]">
