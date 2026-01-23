@@ -147,12 +147,12 @@ const [ref, visible] = ScrollReveal();
           </ul>
 
           <div className="flex flex-wrap pt-6 gap-4">
-            <Link to="https://orebi-2-0.vercel.app/" target="_blank">
+            <Link to="https://finweet-relison.vercel.app/" target="_blank">
               <button className="inline-flex items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px]">
                 <ExternalLinkIcon /> Live Demo
               </button>
             </Link>
-            <Link to="https://github.com/Mehedi43g/OREBI2.0" target="_blank">
+            <Link to="https://github.com/Mehedi43g/-Finweet-relison" target="_blank">
               <button className="inline-flex items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px]">
                 <GithubIcon /> Source Code
               </button>
@@ -169,12 +169,12 @@ const [ref, visible] = ScrollReveal();
             />
             <div className="absolute top-0 left-0 w-full h-full bg-[#00d3f32a] rounded-2xl opacity-0 group-hover:opacity-100 duration-300">
               <div className="flex items-center justify-center h-full gap-3">
-                <Link to="https://orebi-2-0.vercel.app/" target="_blank">
+                <Link to="https://finweet-relison.vercel.app/" target="_blank">
                   <button className="inline-flex items-center p-2 border bg-[#11202D] hover:bg-[#00D3F3] duration-300 text-white rounded-full">
                     <ExternalLinkIcon />
                   </button>
                 </Link>
-                <Link to="https://github.com/Mehedi43g/OREBI2.0" target="_blank">
+                <Link to="https://github.com/Mehedi43g/-Finweet-relison" target="_blank">
                   <button className="inline-flex items-center p-2 border bg-[#11202D] hover:bg-[#00D3F3] duration-300 text-white rounded-full">
                     <GithubIcon />
                   </button>
@@ -183,13 +183,8 @@ const [ref, visible] = ScrollReveal();
             </div>
           </div>
         </div>
-
-       
+        </div>
       </div>
-      
-    
-
-    </div>
   </Container>
 </section>
 
