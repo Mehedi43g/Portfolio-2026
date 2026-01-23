@@ -123,23 +123,24 @@ const [ref, visible] = ScrollReveal();
           </div>
         </div>
       </div>
+      
+      
       <div className="pt-10 flex flex-col md:flex-row gap-10">
          <div className="w-full md:w-6/12 px-2">
-          <h3 className='font-lato text-[30px] text-white'>Orebi E-commers Web</h3>
+          <h3 className='font-lato text-[30px] text-white'> <span className="pr-1">{"{"}</span>Finsweet</h3>
           <p className='font-lato text-[14px] text-[#99A1A1]'>
-            Modern E-commerce Platform with API Integration, Context API State Management,
-            and Fully Responsive Design.
+            Fully Responsive Website built with HTML, CSS, and Bootstrap 5.
           </p>
 
           <div className="border bg-[#0E0C14] border-[#00d3f3c0] mt-3 p-3 rounded-[5px]">
             <h4 className='text-[#00D3F3] text-[16px] font-lato'>Problem Solved:</h4>
             <p className='text-[#99A1A1] text-[14px] font-lato'>
-              Dynamic data rendering, state synchronization, and responsive UI structuring.
+               Responsive layout challenges and cross-browser consistency.
             </p>
           </div>
 
-          <ul className='flex flex-wrap pt-3 gap-3'>
-            {["React","React Router","Context API","Tailwind CSS","JavaScript"].map(t => (
+         <ul className='flex flex-wrap pt-3 gap-3'>
+            {["HTML","CSS","Bootstrap 5"].map(t => (
               <li key={t} className='text-[14px] border bg-[#11202D] px-3 py-1 text-[#00D3F3] rounded-[5px]'>
                 {t}
               </li>
@@ -184,7 +185,8 @@ const [ref, visible] = ScrollReveal();
           </div>
         </div>
         </div>
-      </div>
+
+    </div>
   </Container>
 </section>
 
