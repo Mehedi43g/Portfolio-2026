@@ -7,7 +7,7 @@ const Contract = () => {
   const [ref, visible] = ScrollReveal();
 
   return (
-    <section id="contact" className="py-16 bg-[#0E0E13]">
+    <section id="contact" className="py-16 bg-[#0e0e13f8]">
       <Container>
         <div ref={ref} className={`${  visible ? "opacity-100 translate-y-0 duration-1000" : "opacity-0 translate-y-16"  }`} >
           <div className="text-center px-4">
