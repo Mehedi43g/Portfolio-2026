@@ -4,7 +4,7 @@ import photo1 from "../assets/photo1.png"
 import photo2 from "../assets/photo2.png"
 import ScrollReveal from '../hooks/ScrollReveal'
 import { Link } from 'react-router'
-
+import photo3 from "../assets/photo3.png"
 const Projects = () => {
 
   const GithubIcon = ({ size = 20 }) => (
@@ -185,6 +185,68 @@ const [ref, visible] = ScrollReveal();
           </div>
         </div>
         </div>
+      
+      <div className="pt-10 flex flex-col md:flex-row gap-10">
+        <div className="w-full md:w-6/12">
+          <div className="p-7 bg-white rounded-2xl border-2 border-[#00D3F3] relative group">
+            <img
+              className='w-full rounded-2xl shadow-xl/30 group-hover:scale-105 duration-300'
+              src={photo3}
+              alt=""
+            />
+            <div className="absolute top-0 left-0 w-full h-full bg-[#00d3f32a] rounded-2xl opacity-0 group-hover:opacity-100 duration-300">
+              <div className="flex items-center justify-center h-full gap-3">
+                <Link to="https://job2-0-8ejd.vercel.app/" target="_blank">
+                  <button className="inline-flex items-center p-2 border bg-[#11202D] hover:bg-[#00D3F3] duration-300 text-white rounded-full cursor-pointer">
+                    <ExternalLinkIcon />
+                  </button>
+                </Link>
+                <Link to="https://github.com/Mehedi43g/Job2.0" target="_blank">
+                  <button className="inline-flex items-center p-2 border bg-[#11202D] hover:bg-[#00D3F3] duration-300 text-white rounded-full cursor-pointer">
+                    <GithubIcon />
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full md:w-6/12 px-2">
+          <h3 className='font-lato text-[30px] text-white'>Call Logs & History</h3>
+          <p className='font-lato text-[14px] text-[#99A1A1]'>
+           Call Logs & History is an AI-powered web application that helps users easily track, manage,
+            and analyze their call history. Built with React.js and Tailwind CSS, it delivers a fast, clean, and modern user experience.
+          </p>
+
+          <div className="border bg-[#0E0C14] border-[#00d3f3c0] mt-3 p-3 rounded-[5px]">
+            <h4 className='text-[#00D3F3] text-[16px] font-lato'>Problem Solved:</h4>
+            <p className='text-[#99A1A1] text-[14px] font-lato'>
+              Responsive UI structuring.
+            </p>
+          </div>
+
+          <ul className='flex flex-wrap pt-3 gap-3'>
+            {["React","Tailwind CSS","JavaScript"].map(t => (
+              <li key={t} className='text-[14px] border bg-[#11202D] px-3 py-1 text-[#00D3F3] rounded-[5px]'>
+                {t}
+              </li>
+            ))}
+          </ul>
+
+          <div className="flex flex-wrap pt-6 gap-4">
+            <Link to="https://job2-0-8ejd.vercel.app/" target="_blank">
+              <button className="inline-flex items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] cursor-pointer">
+                <ExternalLinkIcon /> Live Demo
+              </button>
+            </Link>
+            <Link to="https://github.com/Mehedi43g/Job2.0" target="_blank">
+              <button className="inline-flex items-center gap-2 px-2 py-1 border bg-[#11202D] text-[#00D3F3] rounded-[5px] cursor-pointer">
+                <GithubIcon /> Source Code
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
 
     </div>
   </Container>
