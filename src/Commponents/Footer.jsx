@@ -113,6 +113,7 @@ const Footer = () => {
 
             <p className="pt-8 text-[14px] text-gray-500">
               © 2026 Mehedi Hasan. All rights reserved.
+              
             </p>
           </div>
         </div>

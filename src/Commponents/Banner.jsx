@@ -92,7 +92,7 @@ const Banner = () => {
           </div>
 
         </div>
-
+        
         <div className="pb-5">
           <div className="w-8 h-12 mx-auto flex items-center justify-center rounded-full border-2 border-white shadow-[0_0_15px_rgba(255,255,255,0.6)]">
             <span className="animate-bounce text-white">
