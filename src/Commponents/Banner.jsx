@@ -99,6 +99,7 @@ const Banner = () => {
               <GoDotFill size={14} />
             </span>
           </div>
+          
         </div>
       </Container>
     </section>
