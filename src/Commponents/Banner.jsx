@@ -98,6 +98,7 @@ const Banner = () => {
             <span className="animate-bounce text-white">
               <GoDotFill size={14} />
             </span>
+            
           </div>
           
         </div>
