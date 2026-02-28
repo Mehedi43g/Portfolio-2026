@@ -48,7 +48,6 @@ const About = () => {
                 <h5 className='font-lato text-[20px]'>Component Architecture</h5>
                 <p className='font-lato text-[14px]'>Building reusable, modular components that scale with your application <br /> needs.</p>
               </div>
-
               </div>
             </div>
             <div className="flex border rounded-[10px] border-[#1b7aa0] hover:border-[#0fb1f1]">
