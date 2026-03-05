@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { VscVscodeInsiders } from "react-icons/vsc";
+import meBG from "../assets/meNoBg.png"
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import Container from "./Container";
 
@@ -15,10 +15,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           
           <div className="group flex items-center gap-4 cursor-pointer select-none">
-            <div className="p-3 rounded-xl bg-indigo-600 text-white group-hover:bg-white group-hover:text-indigo-600 transition-all duration-300 shadow-md">
-              <VscVscodeInsiders className="text-[32px] group-hover:rotate-12 transition-transform duration-300" />
+            <div className="p-2  rounded-xl w- shadow-md relative">
+              
             </div>
-
+            <img  className=" absolute -top-2 left-65 w-20" src={meBG} alt="" />
             <div className="leading-tight">
               <h3 className="text-[18px] font-bold tracking-wide text-white">
                 MD MEHEDI HASAN
@@ -28,8 +28,7 @@ const Navbar = () => {
               </span>
             </div>
           </div>
-
-
+          
           <div
             className="md:hidden text-3xl cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}

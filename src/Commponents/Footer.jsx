@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from './Container'
-import { VscVscodeInsiders } from 'react-icons/vsc'
+import meBG from "../assets/meNoBg.png"
 import { Link } from 'react-router'
 import ScrollReveal from '../hooks/ScrollReveal'
 
@@ -50,8 +50,9 @@ const Footer = () => {
           
           <div className="w-full lg:w-4/12">
             <div className="group flex items-center gap-4 cursor-pointer select-none">
-              <div className="p-3 rounded-xl bg-indigo-600 text-white group-hover:bg-white group-hover:text-indigo-600 transition-all duration-300 shadow-md">
-                <VscVscodeInsiders className="text-[32px] group-hover:rotate-12 transition-transform duration-300" />
+              <div className="p-10  rounded-xl shadow-md relative">
+
+                <img  className=" absolute -top-5 left-0 w-20 rounded-full" src={meBG} alt="" />
               </div>
 
               <div className="leading-tight">

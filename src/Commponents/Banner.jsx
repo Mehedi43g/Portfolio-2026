@@ -1,10 +1,8 @@
 
 import Container from './Container'
-
-import mehedi from "../assets/Mehedi.png"
+import me from "../assets/me.png"
 import { GoDotFill } from 'react-icons/go'
 import ScrollReveal from '../hooks/ScrollReveal'
-import { Link } from 'react-router'
 
 const Banner = () => {
   const [ref, visible] = ScrollReveal();
@@ -79,14 +77,14 @@ const Banner = () => {
             </div>
           </div>
           <div className="relative hidden md:flex justify-center items-center">
-            <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-indigo-600/10 flex items-center justify-center overflow-hidden">
+            <div className="relative w-64 h-64 lg:w-80 lg:h-100 rounded-full bg-indigo-600/10 flex items-center justify-center overflow-hidden">
 
               <div className="absolute inset-4 rounded-full bg-indigo-600/20 shadow-[0_0_15px_rgba(255,255,255,0.6)]"></div>
 
               <img
-                src={mehedi}
+                src={me}
                 alt="Mehedi"
-                className="relative w-full h-full object-cover rounded-full scale-95"
+                className="relative w-full h-full object-cover rounded-full scale-95  "
               />
             </div>
           </div>
